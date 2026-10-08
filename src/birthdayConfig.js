@@ -8,9 +8,9 @@ const birthdayConfig = {
 
   // ── Person Details ──────────────────────────────────────────
   person: {
-    name: "Sarah",                      // Birthday person's name
-    age: 25,                            // Age they're turning
-    birthdayDate: "2026-10-06",         // ISO date string (YYYY-MM-DD)
+    name: "Pooja",                      // Birthday person's name
+    age: 22,                            // Age they're turning
+    birthdayDate: "2026-10-09",         // ISO date string (YYYY-MM-DD)
   },
 
   // ── Countdown Section ────────────────────────────────────────
@@ -46,7 +46,7 @@ const birthdayConfig = {
 On this very special day, I want you to know just how incredibly loved and cherished you are. 
 You light up every room you walk into with your warmth, your laughter, and your beautiful spirit.
 
-Twenty-five years of YOU — twenty-five years of grace, courage, kindness, and joy. 
+Twenty-two years of YOU — twenty-two years of grace, courage, kindness, and joy. 
 You've touched so many hearts without even knowing it.
 
 May this year bring you everything you've ever dreamed of: 
@@ -68,23 +68,23 @@ Your Friends & Family 💖`,
     // Replace imageUrl values with your own hosted image links
     slides: [
       {
-        imageUrl: "/images/1.jpeg",
+        imageUrl: "/images/11.jpeg",
         quote: "Every birthday is a gift. Every day is a gift.",
       },
       {
-        imageUrl: "/images/2.jpeg",
+        imageUrl: "/images/12.jpeg",
         quote: "Life is a party. Dress like it. 🎉",
       },
       {
-        imageUrl: "/images/3.jpeg",
+        imageUrl: "/images/13.jpeg",
         quote: "May your day be as sweet as cake and as bright as candles.",
       },
       {
-        imageUrl: "/images/4.jpeg",
+        imageUrl: "/images/14.jpeg",
         quote: "Adventure awaits — and so does your next chapter. ✨",
       },
       {
-        imageUrl: "/images/5.jpeg",
+        imageUrl: "/images/15.jpeg",
         quote: "You are one in a million, and today the world celebrates YOU!",
       },
     ],
