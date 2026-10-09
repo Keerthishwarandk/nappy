@@ -184,6 +184,8 @@ export default function CakeSection({ config, show, onNext }) {
   const [cursor, setCursor] = useState({ x: -300, y: -300 });
   const [knifeMode, setKnifeMode] = useState(false);
   const [audioStatus, setAudioStatus] = useState('idle'); // idle | playing | error
+  const audioUrl =
+    `${import.meta.env.BASE_URL}${config.cake.cuttingAudioUrl.replace(/^\//, '')}`;
 
   useEffect(() => {
     if (!knifeMode) return;
@@ -198,10 +200,8 @@ export default function CakeSection({ config, show, onNext }) {
     setKnifeMode(false);
     spawnConfetti(e.clientX, e.clientY);
     setAudioStatus('playing');
-    playBirthdayAudio(
-      `${import.meta.env.BASE_URL}${config.cake.cuttingAudioUrl.replace(/^\//, '')}`
-    );
-  }, [knifeMode, sliced, config.cake.cuttingAudioUrl]);
+    playBirthdayAudio(audioUrl);
+  }, [knifeMode, sliced, audioUrl]);
 
   if (!show) return null;
 
