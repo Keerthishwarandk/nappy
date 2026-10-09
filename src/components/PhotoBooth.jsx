@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
 export default function PhotoBooth({ config, show, personName, personAge }) {
-  const [index, setIndex]   = useState(0);
+  const [index, setIndex] = useState(0);
   const [fading, setFading] = useState(false);
   const slides = config.photoBooth.slides;
-  const total  = slides.length;
+  const total = slides.length;
 
   const navigate = (dir) => {
     if (fading) return;
@@ -33,7 +33,7 @@ export default function PhotoBooth({ config, show, personName, personAge }) {
           style={{ opacity: fading ? 0 : 1, transition: 'opacity 0.28s ease', width: '100%' }}
         >
           <img
-            src={slides[index].imageUrl}
+            src={import.meta.env.BASE_URL + slides[index].imageUrl}
             alt={`Memory ${index + 1}`}
             loading="lazy"
             onError={(e) => {
